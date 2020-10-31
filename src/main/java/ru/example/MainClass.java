@@ -49,7 +49,6 @@ public class MainClass {
     {
         // Метод, принимающий 2 параметра: int и int.
         // Метод должен сравнить переданные параметры между собой и вернуть максимальный.
-        // Для решения необходимо использовать IF или тернарный оператор ?:
 
         if(a > b)
             return a;
@@ -93,7 +92,6 @@ public class MainClass {
     {
         // Метод выводящий на экран в цикле бинарное представление чисел от 0 до 30.
         // Для вывода бинарного представления использовать Integer.toBinaryString().
-        // Без входных параметров и не возвращающая ничего.
 
         for(int i = 0; i <= 30; i++)
             System.out.print(Integer.toBinaryString(i) + "\t");
@@ -104,9 +102,6 @@ public class MainClass {
     public static void binaryMaxValue()
     {
         // Метод выводящий бинарное представление Integer.MAX_VALUE и Integer.MAX_VALUE + 1.
-        // Для вывода бинарного представления использовать Integer.toBinaryString().
-        // Без входных параметров и не возвращающая ничего.
-        // Покажет, что переполнение не вызывает ошибку и как это выглядет в памяти
 
         System.out.println(Integer.toBinaryString(Integer.MAX_VALUE));
         System.out.println(Integer.toBinaryString(Integer.MAX_VALUE + 1));
@@ -115,12 +110,14 @@ public class MainClass {
     public static int charToInt(char c)
     {
         // Метод принимающий 1 параметр типа char и возвращающий его числовое представление.
+
         return (int) c;
     }
 
     public static char intToChar(int i)
     {
-        // Метод принимающий 1 параметр типа int и возвращающий его представление в виде печатного символа
+        // Метод принимающий 1 параметр типа int и возвращающий его представление в виде печатного символа.
+
         return (char) i;
     }
 
