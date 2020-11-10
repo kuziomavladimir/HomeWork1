@@ -11,8 +11,7 @@ public class LifeCycle {
     private Animals frog;
     private Random random;
 
-    public LifeCycle()
-    {
+    public LifeCycle() {
         cat = new Cat("Дымок");
         dog = new Dog("Барбос");
         frog = new Frog("Жора");
@@ -22,8 +21,8 @@ public class LifeCycle {
 
     public void startLife() {
         // цикл работает, пока все животные живы.
-        // постарался сделать так, чтобы все животные, имея свои сильные и слабые стороны,
-        // были в равных условиях
+        // постарался сделать так, чтобы все животные, имея свои
+        // сильные и слабые стороны, были в равных условиях
 
         while (cat.isAlife || dog.isAlife || frog.isAlife) {
             goCycle(frog, dog);

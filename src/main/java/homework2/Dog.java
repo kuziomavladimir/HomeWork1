@@ -9,7 +9,6 @@ public class Dog extends Animals {
         force = 35;     // сила укуса
         isAlife = true;
         System.out.println("Собака создана");
-
     }
 
     @Override

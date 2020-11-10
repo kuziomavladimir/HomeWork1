@@ -5,8 +5,8 @@ public class Frog extends Animals {
     public Frog(String name) {
         this.name = name;
         health = 17;
-        hunger = 45;   // голод
-        force = 70;   // Сила яда
+        hunger = 45;    // голод
+        force = 70;     // Сила яда
         isAlife = true;
         System.out.println("Лягушка создана");
     }
