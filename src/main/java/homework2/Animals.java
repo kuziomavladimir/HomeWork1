@@ -14,7 +14,6 @@ public abstract class Animals {
     public abstract void doSwim();      // плавание
     public abstract void checkHunger(); // проверка уровня голода
 
-
     public void doEat() {   //приём пищи
         if (hunger == 0)
             System.out.println(name + " Пытается поесть, но не голоден");

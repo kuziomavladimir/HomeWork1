@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CatTest {
-    Cat cat = new Cat("Valera");
+    //Cat cat = new Cat("Valera");
 
     @BeforeEach
     void setUp() {
@@ -23,7 +23,7 @@ class CatTest {
 
     @Test
     void doVote() {
-        assertAll();
+        //assertAll();
     }
 
     @Test
