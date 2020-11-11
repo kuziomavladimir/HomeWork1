@@ -23,11 +23,12 @@ class CatTest {
 
     @Test
     void doVote() {
-        assertAll();
+//        assertAll();
     }
 
     @Test
     void doMotion() {
+        assertEquals(1,1);
     }
 
     @Test
