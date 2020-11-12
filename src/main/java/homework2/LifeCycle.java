@@ -10,6 +10,7 @@ public class LifeCycle implements Runnable {
     private Animals preyAnimal1;    // то животное, с которым будет взаимодействовать (кусать) animal
     private Animals preyAnimal2;    // то животное, с которым будет взаимодействовать (кусать) animal
 
+    private Food food;
     private Random random;
     public Thread t;
 
@@ -19,6 +20,7 @@ public class LifeCycle implements Runnable {
         this.preyAnimal1 = preyAnimal1;
         this.preyAnimal2 = preyAnimal2;
 
+        food = new Food(60);
         random = new Random();
         t = new Thread(this, animal.name + "Thread");
         t.start();
@@ -39,7 +41,7 @@ public class LifeCycle implements Runnable {
                     animal.doVote();
                     break;
                 case 3:
-                    animal.doEat();
+                    animal.doEat(food);
                     break;
                 case 4:
                     animal.doClimbUpTrees();

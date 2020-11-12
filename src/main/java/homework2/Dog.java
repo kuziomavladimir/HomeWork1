@@ -13,8 +13,18 @@ public class Dog extends Animals {
     }
 
     @Override
-    public void doEat() {
-        super.doEat();
+    public void doEat(Food food) {
+        if (hunger == 0)
+            System.out.println(name + " Пытается поесть, но не голоден");
+        else if (food.getFoodQuantity() <= 0) {
+            System.out.println(name + " Пытается поесть, но нет еды");
+        }
+        else {
+            hunger = 0;
+            health += 7;
+            System.out.println(name + " Поел! Good Food!");
+            food.setFoodQuantity(food.getFoodQuantity() - 30);
+        }
         health = (health > 100) ? 100 : health;
     }
 

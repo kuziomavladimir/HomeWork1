@@ -17,10 +17,11 @@ public class MainClass {
         LifeCycle catLifeCycle = new LifeCycle(cat, dog, frog);
         LifeCycle dogLifeCycle = new LifeCycle(dog, cat, frog);
         LifeCycle frogLifeCycle = new LifeCycle(frog, dog, cat);
+
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.out.println(e.getClass());
         }
         
         System.out.println(Thread.currentThread().getPriority());
@@ -31,5 +32,7 @@ public class MainClass {
         } catch (InterruptedException e) {
             System.out.println(e.getClass());
         }
+
+        System.out.println(catLifeCycle.t.isAlive());
     }
 }
