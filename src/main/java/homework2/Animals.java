@@ -10,17 +10,19 @@ public abstract class Animals {
 
     public abstract void doVote();          // голос
     public abstract void doMotion();        // движение
-    public abstract void doClimbUpTrees();  // лазание по деревьям
-    public abstract void doSwim();          // плавание
     public abstract void checkHunger();     // проверка уровня голода
     public abstract void doEat(Food food);           //приём пищи
 
-    public void showAnimalCharacteristics() {   // показать характеристики животного
+    public void showAnimalCharacteristics() {
+        // показать характеристики животного
+
         System.out.println("Name: " + name + " Health: " + health + " Hunger: " + hunger + " Force: " + force +
                             " Is A life: " + isAlife);
     }
 
-    public void doAttack(Animals animal) {  // атаковать
+    public void doAttack(Animals animal) {
+        // атаковать
+
         System.out.println(name + " Яростно атакует: " + animal.name);
         animal.health -= force * 0.7;
         hunger += 5;

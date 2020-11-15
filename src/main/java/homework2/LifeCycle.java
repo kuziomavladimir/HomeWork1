@@ -44,13 +44,13 @@ public class LifeCycle implements Runnable {
                     animal.doEat(food);
                     break;
                 case 4:
-                    animal.doClimbUpTrees();
+                    doNewClimbUpTrees();
                     break;
                 case 5:
                     animal.doMotion();
                     break;
                 case 6:
-                    animal.doSwim();
+                    doNewSwim();
                     break;
                 case 7:
                     animal.doAttack(preyAnimal2);
@@ -59,5 +59,24 @@ public class LifeCycle implements Runnable {
             animal.showAnimalCharacteristics();
             System.out.println();
         }
+    }
+
+    public void doNewClimbUpTrees() {
+        if (animal.getClass().getName() == "homework2.Cat") {
+            ((Cat)animal).doClimbUpTrees();
+        }
+        else
+            System.out.println(animal.name + " " + "Не умеет лазать по деревьям");
+    }
+
+    public void doNewSwim() {
+        if (animal.getClass().getName() == "homework2.Frog") {
+            ((Frog) animal).doSwim();
+        }
+        else if (animal.getClass().getName() == "homework2.Dog") {
+            ((Dog) animal).doSwim();
+        }
+        else
+            System.out.println(animal.name + " " + "Не умеет плавать");
     }
 }

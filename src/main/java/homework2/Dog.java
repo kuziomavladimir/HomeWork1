@@ -42,13 +42,6 @@ public class Dog extends Animals {
         checkHunger();
     }
 
-    @Override
-    public void doClimbUpTrees() {
-        System.out.println(name +  ": Я не умею лазать по деревьям");
-        checkHunger();
-    }
-
-    @Override
     public void doSwim() {
         System.out.println(name + " Плавает в бассейне");
         hunger += 10;

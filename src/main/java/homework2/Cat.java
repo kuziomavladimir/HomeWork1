@@ -41,16 +41,9 @@ public class Cat extends Animals {
         checkHunger();
     }
 
-    @Override
     public void doClimbUpTrees() {
         System.out.println(name + " Прыгает на дерево");
         hunger += 5;
-        checkHunger();
-    }
-
-    @Override
-    public void doSwim() {
-        System.out.println(name +  ": Я не люблю плавать");
         checkHunger();
     }
 

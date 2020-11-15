@@ -13,7 +13,7 @@ public class MainClass {
         Animals cat = new Cat("Дымок");
         Animals dog = new Dog("Барбос");
         Animals frog = new Frog("Жора");
-        
+
         LifeCycle catLifeCycle = new LifeCycle(cat, dog, frog);
         LifeCycle dogLifeCycle = new LifeCycle(dog, cat, frog);
         LifeCycle frogLifeCycle = new LifeCycle(frog, dog, cat);
@@ -23,7 +23,7 @@ public class MainClass {
         } catch (InterruptedException e) {
             System.out.println(e.getClass());
         }
-        
+
         System.out.println(Thread.currentThread().getPriority());
         System.out.println(Thread.currentThread().getName());
 
@@ -34,5 +34,6 @@ public class MainClass {
         }
 
         System.out.println(catLifeCycle.t.isAlive());
+
     }
 }
